@@ -172,7 +172,7 @@ export default function EyeRevealSection() {
       <svg width="0" height="0" className="absolute">
         <defs>
           <clipPath id="eyeClipReveal" clipPathUnits="objectBoundingBox">
-            <path ref={eyePathRef} d="M 0 0.5 Q 0.5 0.5 1 0.5 Q 0.5 0.5 0 0.5 Z" />
+            <path ref={eyePathRef} d="M 0 0.5 Q 0.5 0.45 1 0.5 Q 0.5 0.55 0 0.5 Z" />
           </clipPath>
         </defs>
       </svg>
