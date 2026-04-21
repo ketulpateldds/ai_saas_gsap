@@ -1,4 +1,5 @@
 import { ReactLenis } from 'lenis/react';
+import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import EyeRevealSection from './components/EyeRevealSection';
 import MidCTASection from './components/MidCTASection';
@@ -13,6 +14,9 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <ReactLenis root>
+      {/* Premium Vibe Orange Initial Page Loader */}
+      <Preloader />
+
       <Navbar />
       <main className="bg-bg min-h-screen text-white pt-24 lg:pt-0">
         {/* The New Hero Experience */}
