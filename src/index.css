@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Covered+By+Your+Grace&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-figtree: 'Figtree', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-hand: 'Covered By Your Grace', cursive;
+  
+  /* Use Poppins for primary sans as per user request for headings/display */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #685BC7; /* Lavender */
+  --color-accent: #DAFF02;  /* Neon Green */
+  --color-secondary-accent: #FE572A; /* Vibes Orange */
+  --color-bg: #2A2A2A;      /* Almost Black */
+  --color-text-primary: #FAFAF9; /* Almost White */
+}
+
+:root {
+  --bg: #2A2A2A;
+  --accent: #DAFF02;
+  --primary: #685BC7;
+  --secondary: #FE572A;
+  --text-main: #FAFAF9;
+  
+  --glass: rgba(250, 250, 249, 0.03);
+  --glass-border: rgba(250, 250, 249, 0.1);
+  
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-inter);
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
